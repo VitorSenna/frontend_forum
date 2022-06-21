@@ -19,16 +19,6 @@ function BarraDeTarefa(){
         className="me-auto"
         navbar
       >
-        <NavItem>
-          <NavLink href="/components/">
-            Components
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="https://github.com/reactstrap/reactstrap">
-            GitHub
-          </NavLink>
-        </NavItem>
         <UncontrolledDropdown
           inNavbar
           nav
@@ -37,19 +27,21 @@ function BarraDeTarefa(){
             caret
             nav
           >
-            Options
+            Menu
           </DropdownToggle>
           <DropdownMenu right>
             <DropdownItem>
-              Option 1
-            </DropdownItem>
-            <DropdownItem>
-              Option 2
+              <NavLink href="/auth/login">Login</NavLink>
             </DropdownItem>
             <DropdownItem divider />
             <DropdownItem>
-              Reset
+            <NavLink href="/auth/register">Cadastre-se</NavLink>
             </DropdownItem>
+            <DropdownItem divider />
+            <DropdownItem>
+            <NavLink href="/register/ideia">Crie sua ideia</NavLink> 
+            </DropdownItem>
+            <DropdownItem divider />
           </DropdownMenu>
         </UncontrolledDropdown>
       </Nav>
